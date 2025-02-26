@@ -1,1 +1,17 @@
-<p>galeria works!</p>
+<div class="container mt-4">
+    <div class="row">
+        @for (empleado of empleados; track empleado) {
+        <div class="col-md-3 mb-4">
+            <a href="{{empleado.images.main}}">
+                <img src="{{empleado.images.main}}" class="img-fluid rounded shadow" alt="">
+            </a>
+            <div>
+                <span>
+                    Nombre: {{empleado.name.first}} {{empleado.name.last}} <br>
+
+                </span>
+            </div>
+        </div>
+        }
+    </div>
+</div>
