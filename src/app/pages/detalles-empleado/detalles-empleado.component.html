@@ -1,1 +1,8 @@
-<p>detalles-empleado works!</p>
+<h1>INFORMACION DE EMPLEADO</h1>
+
+{{empleado | json}}
+<hr>
+<span>
+    Nombre: {{empleado.name.first}}
+    Foto: {{empleado.images.main}}
+</span>
