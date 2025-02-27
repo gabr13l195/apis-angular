@@ -12,6 +12,7 @@ export class EmpleadoService {
 
   private API_EMPLEADO = 'https://api.sampleapis.com/futurama/characters'
 
+//Peticiones simpere por defecto
 getEmpleado(): Observable <any>{
   return this.http.get(this.API_EMPLEADO)
 }
