@@ -17,6 +17,8 @@ export class FormularioComponent {
 
   guardar(formulario: any){    
     this.servicio.postProducto(formulario.value).subscribe()
+
+    window.location.reload
   }
 
 

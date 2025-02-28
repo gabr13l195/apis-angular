@@ -1,31 +1,31 @@
 <h1>Soy tabla 2</h1>
-<div class="container mt-3">
+<div class="table table-hover container">
     <h2>Basic Table</h2>
-    <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
     <table class="table">
         <thead>
             <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
+                <th>ID</th>
+                <th>PRODUCTO</th>
+                <th>PRECIO</th>
+                <th>ACCIONES</th>
             </tr>
         </thead>
         <tbody>
+            @for (producto of productos; track producto) {
             <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>johncom</td>
+                <td>{{producto.id}}</td>
+                <td>{{producto.producto}}</td>
+                <td>{{producto.precio}}</td>
+                <td class="btn-group btn-group-md">
+                    <button 
+                        class="btn btn-danger"
+                        (click)="eliminar(producto.id)">
+                        Eliminar
+                    </button>
+                    <button class="btn btn-success">Actualizar</button>
+                </td>
             </tr>
-            <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>maryexample.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>julyxample.com</td>
-            </tr>
+        }
         </tbody>
     </table>
 </div>

@@ -1,19 +1,19 @@
 {
   "productos": [
     {
-      "id": "0e08",
-      "producto": "TV",
-      "precio": "300"
+      "id": "80e8",
+      "producto": "Silla gamer",
+      "precio": "500"
     },
     {
-      "id": "ea5f",
-      "producto": "Iphone",
-      "precio": "750"
+      "id": "a0ac",
+      "producto": "Laptop",
+      "precio": "1200"
     },
     {
-      "id": "c455",
-      "producto": "Tablet",
-      "precio": "400"
+      "id": "b936",
+      "producto": "Television",
+      "precio": "5800"
     }
   ]
 }

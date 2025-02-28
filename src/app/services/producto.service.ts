@@ -12,14 +12,19 @@ export class ProductoService {
 
   private API_PRODUCTOS="http://localhost:3000/productos"
 
-  //METODO GET
+  //METODO GET - lee info
   getProductos():Observable<any>{
     return this.http.get(this.API_PRODUCTOS)
   }
 
 
-  //METODO POST
+  //METODO POST - guarda informacion
   postProducto(producto: any):Observable<any>{
     return this.http.post(this.API_PRODUCTOS, producto)
+  }
+
+  //METODO DELETE
+  deleteProducto(id:any):Observable<any>{
+    return this.http.delete(`${this.API_PRODUCTOS}/${id}`)
   }
 }

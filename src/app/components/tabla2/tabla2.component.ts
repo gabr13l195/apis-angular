@@ -13,11 +13,17 @@ export class Tabla2Component {
   servicio = inject(ProductoService)
   productos: any
   
+  //Este metodo lee los datos
   ngOnInit(){
     this.servicio.getProductos().subscribe(producto=>
       this.productos=producto
     )
+  }
 
+  //Este metodo elimina los datos
+  eliminar(id:any){
+    this.servicio.deleteProducto(id).subscribe()
+    window.location.reload
   }
 
 }
