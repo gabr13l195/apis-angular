@@ -1,14 +1,19 @@
 {
-    "productos": [
-        {
-            "id": "434f",
-            "producto": "Tablet",
-            "precio": "200"
-        },
-        {
-            "id": "1b9f",
-            "producto": "TV",
-            "precio": "450"
-        }
-    ]
+  "productos": [
+    {
+      "id": "0e08",
+      "producto": "TV",
+      "precio": "300"
+    },
+    {
+      "id": "ea5f",
+      "producto": "Iphone",
+      "precio": "750"
+    },
+    {
+      "id": "c455",
+      "producto": "Tablet",
+      "precio": "400"
+    }
+  ]
 }

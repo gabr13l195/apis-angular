@@ -15,9 +15,7 @@ export class FormularioComponent {
   producto: any;
   precio: any;
 
-  guardar(formulario: any){
-    console.log(formulario.value);
-    
+  guardar(formulario: any){    
     this.servicio.postProducto(formulario.value).subscribe()
   }
 
