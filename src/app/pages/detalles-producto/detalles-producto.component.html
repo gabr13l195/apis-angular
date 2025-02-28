@@ -1,0 +1,10 @@
+<form (ngSubmit)="editar(formulario)" #formulario="ngForm" class="container">
+    <input type="text" name="id" [(ngModel)]="id" class="form-control">
+    <input type="text" placeholder="Ingrese nombre del producto" name="producto" [(ngModel)]="producto"
+        class="form-control">
+    <input type="text" placeholder="Ingrese precio" name="precio" [(ngModel)]="precio" class="form-control">
+
+    <button type="submit" class="btn btn-primary">Guardar/enviar </button>
+</form>
+
+

@@ -13,7 +13,12 @@
     {
       "id": "b936",
       "producto": "Television",
-      "precio": "5800"
+      "precio": "580"
+    },
+    {
+      "id": "ab60",
+      "producto": "Laptop Gamer",
+      "precio": "1200"
     }
   ]
 }

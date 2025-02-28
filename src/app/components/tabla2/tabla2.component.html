@@ -22,7 +22,7 @@
                         (click)="eliminar(producto.id)">
                         Eliminar
                     </button>
-                    <button class="btn btn-success">Actualizar</button>
+                    <button class="btn btn-success" [routerLink]="['/producto', producto.id]">Actualizar</button>
                 </td>
             </tr>
         }

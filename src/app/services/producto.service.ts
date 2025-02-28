@@ -17,6 +17,9 @@ export class ProductoService {
     return this.http.get(this.API_PRODUCTOS)
   }
 
+  getUnicoProducto(id:any):Observable<any>{
+    return this.http.get(`${this.API_PRODUCTOS}/${id}`)
+  }
 
   //METODO POST - guarda informacion
   postProducto(producto: any):Observable<any>{
@@ -27,4 +30,10 @@ export class ProductoService {
   deleteProducto(id:any):Observable<any>{
     return this.http.delete(`${this.API_PRODUCTOS}/${id}`)
   }
+
+  //METODO PUT
+  putProducto(producto:any):Observable<any>{
+    return this.http.put(`${this.API_PRODUCTOS}/${producto.id}`, producto)
+  }
+
 }

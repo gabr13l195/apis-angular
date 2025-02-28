@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { ProductoService } from '../../services/producto.service';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tabla2',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './tabla2.component.html',
   styleUrl: './tabla2.component.css'
 })
