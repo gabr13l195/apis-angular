@@ -1,0 +1,14 @@
+{
+    "productos": [
+        {
+            "id": "434f",
+            "producto": "Tablet",
+            "precio": "200"
+        },
+        {
+            "id": "1b9f",
+            "producto": "TV",
+            "precio": "450"
+        }
+    ]
+}
