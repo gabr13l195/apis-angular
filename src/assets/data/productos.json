@@ -19,6 +19,11 @@
       "id": "ab60",
       "producto": "Laptop Gamer",
       "precio": "1200"
+    },
+    {
+      "id": "c68d",
+      "producto": "Mouse Logitech duo",
+      "precio": "54"
     }
   ]
 }

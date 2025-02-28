@@ -27,15 +27,12 @@ export class DetallesProductoComponent {
     this.ruta.params.subscribe(p => {
       this.servicio.getUnicoProducto(p["idProducto"]).subscribe(producto => {
         this.item = producto
+        this.id = this.item.id
+        this.producto = this.item.producto
+        this.precio = this.item.precio
       }
-
       )
     })
 
-    console.log(this.item);
-
-    this.id = this.item.id
-    this.producto = this.item.producto
-    this.precio = this.item.precio
   }
 }
