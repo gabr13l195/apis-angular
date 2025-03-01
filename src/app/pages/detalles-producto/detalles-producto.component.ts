@@ -29,7 +29,7 @@ export class DetallesProductoComponent {
         this.item = producto
         this.id = this.item.id
         this.producto = this.item.producto
-        this.precio = this.item.precio
+        this.precio = this.item.preciod
       }
       )
     })

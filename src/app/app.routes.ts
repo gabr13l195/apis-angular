@@ -5,6 +5,7 @@ import { Error404Component } from './pages/error404/error404.component';
 import { DetallesEmpleadoComponent } from './pages/detalles-empleado/detalles-empleado.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { DetallesProductoComponent } from './pages/detalles-producto/detalles-producto.component';
+import { ClientesComponent } from './pages/clientes/clientes.component';
 
 export const routes: Routes = [
     {path: 'home', component:HomeComponent},
@@ -12,6 +13,7 @@ export const routes: Routes = [
     {path: 'personal/:idEmpleado', component: DetallesEmpleadoComponent},
     {path: 'producto', component:ProductoComponent},
     {path: 'producto/:idProducto', component: DetallesProductoComponent},
+    {path: 'clientes', component: ClientesComponent},
 
     {path: '', redirectTo:'home', pathMatch:'full'},
 
