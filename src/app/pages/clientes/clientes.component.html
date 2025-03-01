@@ -1,14 +1,40 @@
 <form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
 
     <input type="text" placeholder="ID" name="id" [(ngModel)]="id">
-    <input type="text" placeholder="Nombre" name="nombre"[(ngModel)]="nombre">
-    <select name="tipo"[(ngModel)]="tipo">
+    <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nombre">
+    <select name="tipo" [(ngModel)]="tipo">
         <option value="Tecnología">Tecnología</option>
         <option value="Ropa">Ropa</option>
         <option value="Comida">Comida</option>
     </select>
-    <input type="text" placeholder="precio" name="precio"[(ngModel)]="precio">
+    <input type="text" placeholder="precio" name="precio" [(ngModel)]="precio">
 
     <button>Enviar</button>
 
 </form>
+
+<hr>
+
+<div class="container mt-3">
+    <h2>Basic Table</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of productos; track item) {
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.nombre}}</td>
+                <td>{{item.tipo}}</td>
+                <td>{{item.precio}}</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

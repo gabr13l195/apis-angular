@@ -16,5 +16,9 @@ export class FirebaseService {
     return this.http.post(this.API_FIRE, producto)
   }
 
+  //METODO GET
+  getProducto():Observable<any>{
+    return this.http.get(this.API_FIRE)
+  }
 
 }
